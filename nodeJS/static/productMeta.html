@@ -1,0 +1,84 @@
+<html>
+<head>
+    <title>
+        Vendor
+    </title>
+    <script src="/productMeta.js"></script>
+</head>
+
+<body>
+<div>
+    <a href="/vendor">Vendor</a>
+    <div >
+        <a class="nav-link active" aria-current="page" href="/vendor">Home</a><br>
+    </div>
+</div>
+</nav>
+
+<!-- Sidebar -->
+<div>
+    <div>
+        <a href="/vendor">Pocetna</a>
+        <a href="/vendor/users">Users</a>
+        <a href="/vendor/ratings">Rating</a>
+        <a href="/vendor/transactions">Transaction</a>
+        <a href="/vendor/products">Product</a>
+        <a href="/vendor/productmetas">Product_Meta</a>
+        <a href="/vendor/productcategories">Product_Categories</a>
+        <a href="/vendor/orders">Order</a>
+        <a href="/vendor/orderitems">Order_Items</a>
+        <a href="/vendor/categories">Categories</a>
+        <a href="/vendor/carts">Cart</a>
+        <a href="/vendor/cartitems">Cart_Item</a>
+        <div class="container">
+            <h1>Entitet Product Meta</h1>
+            <table class="table table-hover table-dark w-auto">
+                <thead>
+                <tr><th scope="col">test</th></tr>
+                </thead>
+                <tbody id="usersTable">
+                <tr><td>1</td><td><button class="btn btn-danger  btn-sm btn_obrisi">Delete</button></td></tr>
+                <tr><td>2</td><td><button class="btn btn-danger  btn-sm btn_obrisi">Delete</button></td></tr>
+                <tr><td>3</td><td><button class="btn btn-danger  btn-sm btn_obrisi">Delete</button></td></tr>
+                </tbody>
+            </table>
+            <div>
+                <div>
+                    <div>
+                        <h5>Dodaj User</h5>
+                        <form id="addUser">
+                            <div class="row">
+                                <label for="edit_input_name" class="form-label">Product ID:</label>
+                                <input type="text" class="form-control" id="input_name" required><br>
+                                <label for="edit_input_surname" class="form-label">Content:</label>
+                                <input type="text" class="form-control" id="input_surname" required><br>
+                            </div>
+                        </form>
+                        <button type="button" class="btn btn-primary" id="addUserBtn">Dodaj</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="editUserModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <h5 class="modal-title" id="exampleModalLabel">Uredi User</h5>
+                        <div class="modal-body">
+                            <form id="updateTask">
+                                <div class="row">
+                                    <label for="edit_input_name" class="form-label">Product ID:</label>
+                                    <input type="text" class="form-control" id="edit_input_name" ><br>
+                                    <label for="edit_input_surname" class="form-label">Content:</label>
+                                    <input type="text" class="form-control" id="edit_input_surname" ><br>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
